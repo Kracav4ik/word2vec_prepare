@@ -16,7 +16,7 @@ with open(path.replace('.txt', '-tuples.py'), 'w', encoding='utf8') as tuples_fi
     with open(path.replace('.txt', '-sentences.txt'), 'w', encoding='utf8') as sentences_file:
         for sentence in list_of_sentences:
             sentences_file.write(sentence + '\n')
-            words_in_sentence = [re.sub(r'[,():"?!]', "", w) for w in sentence.split() if w != '-']
+            words_in_sentence = [re.sub(r'^[("]*(.*?)[,):"?!]*$', r'\1', w) for w in sentence.split() if w != '-']
 
             for idx_word in range(1, len(words_in_sentence) - 1):
                 tuples_file.write(

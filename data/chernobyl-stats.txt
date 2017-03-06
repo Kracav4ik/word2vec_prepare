@@ -257,7 +257,7 @@ pitecantropus: 2
 80-х: 1
 canis: 1
 coeruleus: 1
-d-125-фосфолитическую: 1
+d-1,2,5-фосфолитическую: 1
 familiaris: 1
 homo: 1
 locus: 1
